@@ -15,19 +15,16 @@ class DBClient {
     });
   }
 
-    // returns true when connection to mongo it success, false if otherwise
   isAlive() {
     return this.client.isConnected();
   }
 
-  // returns the number of documents in the collection.
   async nbUsers() {
     const users = this.db.collection('users');
     const usersNum = await users.countDocuments();
     return usersNum;
   }
 
-  // returns the number of documents in the collection files.
   async nbFiles() {
     const files = this.db.collection('files');
     const filesNum = await files.countDocuments();
