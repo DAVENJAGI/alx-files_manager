@@ -8,4 +8,4 @@ Project done during alx fullstack software engineering programme short speciliza
 - how to authenticate a user
 - how to store data in MongoDB
 - how to store temporary data in Redis
-- how to setup and use a background worker
+how to setup and use a background worker
